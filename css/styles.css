@@ -82,12 +82,10 @@ body {
 .icons {
   display: flex;
   list-style: none;
-  margin-left: 538px;
-  // padding-right: 30px;
-  // padding-left: 30px;
+  margin-left: 568px;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 }
 .twitter {
   display: flex;
@@ -104,10 +102,15 @@ body {
   fill: rgba(255, 255, 255, 0.8);
   transform: rotate(-90deg);
 }
-.twitter:hover {
+.twitter:hover,
+.twitter:focus {
+  outline: none;
   background: rgba(255, 255, 255, 0.8);
 }
 .twitter:hover .icon-twitter {
+  fill: var(--selection-color);
+}
+.twitter:focus .icon-twitter {
   fill: var(--selection-color);
 }
 .facebook {
@@ -125,13 +128,18 @@ body {
   transform: rotate(-90deg);
   fill: rgba(255, 255, 255, 0.8);
 }
-.facebook:hover {
+.facebook:hover,
+.facebook:focus {
+  outline: none;
   background: rgba(255, 255, 255, 0.8);
 }
 .facebook:hover .icon-facebook {
   fill: var(--selection-color);
 }
-.istagram {
+.facebook:focus .icon-facebook {
+  fill: var(--selection-color);
+}
+.instagram {
   display: flex;
   width: 44px;
   height: 44px;
@@ -146,10 +154,15 @@ body {
   transform: rotate(-90deg);
   fill: rgba(255, 255, 255, 0.8);
 }
-.instagram:hover {
+.instagram:hover,
+.instagram:focus {
+  outline: none;
   background: rgba(255, 255, 255, 0.8);
 }
-.istagram:hover .icon-istagram {
+.instagram:hover .icon-instagram {
+  fill: var(--selection-color);
+}
+.instagram:focus .icon-instagram {
   fill: var(--selection-color);
 }
 .content {
@@ -167,6 +180,7 @@ body {
   display: flex;
   margin-top: 25px;
   margin-left: 62px;
+  outline: none;
 }
 .icon-logo {
   display: flex;
