@@ -13,6 +13,7 @@
     rgba(217, 217, 217, 0) 150.11%
   );
   --social-media-background: #ffc197;
+  --selection-color: #ffc197;
 }
 *,
 *::before,
@@ -81,38 +82,75 @@ body {
 .icons {
   display: flex;
   list-style: none;
-  margin-left: 578px;
+  margin-left: 538px;
+  // padding-right: 30px;
+  // padding-left: 30px;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
-
 .twitter {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+}
+.icon-twitter {
   width: 22px;
   height: 22px;
   fill: rgba(255, 255, 255, 0.8);
   transform: rotate(-90deg);
 }
-.icon-facebook {
+.twitter:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.twitter:hover .icon-twitter {
+  fill: var(--selection-color);
+}
+.facebook {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: transparent;
 }
-.facebook {
-  width: 22px;
-  height: 22px;
-  transform: rotate(-90deg);
-  fill: rgba(247, 118, 30, 0.9);
-}
-.instagram {
+.icon-facebook {
   width: 22px;
   height: 22px;
   transform: rotate(-90deg);
   fill: rgba(255, 255, 255, 0.8);
+}
+.facebook:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.facebook:hover .icon-facebook {
+  fill: var(--selection-color);
+}
+.istagram {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+}
+.icon-instagram {
+  width: 22px;
+  height: 22px;
+  transform: rotate(-90deg);
+  fill: rgba(255, 255, 255, 0.8);
+}
+.instagram:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.istagram:hover .icon-istagram {
+  fill: var(--selection-color);
 }
 .content {
   display: flex;
@@ -169,6 +207,7 @@ body {
   background: rgba(247, 118, 30, 0.25);
   box-shadow: 5px 10px 10px rgba(247, 118, 30, 0.25);
   border-radius: 6px;
+  border: none;
 }
 .text {
   position: absolute;
